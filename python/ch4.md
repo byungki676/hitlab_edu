@@ -8,6 +8,7 @@
 2. [함수의 구조](#m2)
 3. [함수의 형태](#m3)
 4. [lambda](#m4)
+5. [연습문제](#m5)
 
 ---
 
@@ -171,3 +172,38 @@ def sum_many(*args): # *을 사용하여 배열을 받는다
 
 30
 ```
+
+<a id="m4"></a>
+## 5. 연습문제
+- 숫자들로 이루어진 리스트를 입력받아 5보다 큰 수만 필터링하여 리턴해 주는 함수를 작성하라.
+```python
+myfunc([2,3,4,5,6,7,8])
+
+[6,7,8]
+```
+
+[\#M\_정답 보기|접기|
+```python
+>>> def myfunc(numbers):
+...     result = []
+...     for number in numbers:
+...        if number > 5:
+...            result.append(number)
+...     return result
+
+>>> myfunc([2,3,4,5,6,7,8])
+
+[6,7,8]
+```
+\_M\#]
+
+
+- 위에서 만든 함수를 lambda로 변경해 보시오.
+[\#M\_정답 보기|접기|
+```python
+>>> myfunc = lambda numbers:[number for number in numbers if number > 5]
+>>> myfunc([2,3,4,5,6,7,8])
+
+[6,7,8]
+```
+\_M\#]

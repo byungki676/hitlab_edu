@@ -145,3 +145,29 @@ def sum_many(*args): # *을 사용하여 배열을 받는다
 ## 4. lambda
 **lambda**는 함수를 생성할 때 사용하는 예약어로, **def**와 동일한 역할을 한다.
 <u>**def**를 사용해야 할 정도로 복잡하지 않거나 **def**를 사용할 수 없는 곳</u>에 주로 쓰이고, **함수**를 **한줄로 간결하게** 만들 때도 사용한다.
+
+<table>
+<td border: 1px>
+<b>lambda</b> 매개변수1, 매개변수2, ...: 매개변수를 이용한 표현식
+</table>
+
+간단한 **lambda** 를 만들어보자.
+
+```python
+>>> sum = lambda a, b: a+b
+>>> sum(3,4)
+
+7
+```
+
+#### def를 이용할 수 없는 경우
+```python
+>>> myList = [lambda a,b: a+b, lambda a,b: a*b]
+>>> myList[0](5,6)
+
+11
+
+>>> myList[1](5,6)
+
+30
+```

@@ -182,28 +182,33 @@ myfunc([2,3,4,5,6,7,8])
 [6,7,8]
 ```
 
-[\#M\_정답 보기 버튼 내용|접기 버튼 내용|
-```python
->>> def myfunc(numbers):
-...     result = []
-...     for number in numbers:
-...        if number > 5:
-...            result.append(number)
-...     return result
+<details>
+  <summary>정답보기</summary>
+  
+  ```python
+  >>> def myfunc(numbers):
+  ...     result = []
+  ...     for number in numbers:
+  ...        if number > 5:
+  ...            result.append(number)
+  ...     return result
 
->>> myfunc([2,3,4,5,6,7,8])
+  >>> myfunc([2,3,4,5,6,7,8])
 
-[6,7,8]
-```
-\_M\#]
-
+  [6,7,8]
+  ```
+</details>
+<Br>
 
 - 위에서 만든 함수를 lambda로 변경해 보시오.
-[\#M\_정답 보기|접기|
-```python
+
+<details>
+  <summary>정답보기</summary>
+  
+  ```python
 >>> myfunc = lambda numbers:[number for number in numbers if number > 5]
 >>> myfunc([2,3,4,5,6,7,8])
 
 [6,7,8]
 ```
-\_M\#]
+</details>
